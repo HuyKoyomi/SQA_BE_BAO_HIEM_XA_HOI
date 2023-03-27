@@ -1,10 +1,14 @@
 package com.example.sqa_be_code_2023.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.springframework.stereotype.Component;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Component
 @Entity
@@ -47,5 +51,10 @@ public class User {
 
     @OneToOne(mappedBy = "user")
     private SystermInformation systermInformation;
+
+//    @OneToMany(mappedBy = "user")
+//    @JsonIgnore
+//    @Fetch(FetchMode.JOIN)
+//    private List<InsuranceType> insuranceType;
 
 }

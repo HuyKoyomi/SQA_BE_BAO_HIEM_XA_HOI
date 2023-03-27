@@ -29,6 +29,25 @@ public class InsuranceType {
     @Column(name = "thoigianapdung", nullable = false)
     private String usingTime;
 
-    @OneToMany(mappedBy = "insuranceType", cascade = CascadeType.ALL)
-    private List<InsurancePremiums> insurancePremiumsList;
+    @Column(name = "quyhttt")
+    private Double quyhttt;
+
+    @Column(name = "quyodts")
+    private Double quyodts;
+
+    @Column(name = "quytnldbnn")
+    private Double quytnldbnn;
+
+    @Column(name = "quybhtn")
+    private Double quybhtn;
+
+    @Column(name = "quybhyt")
+    private Double quybhyt;
+
+    @Column(name = "tong")
+    private Double total;
+
+//    @ManyToOne
+//    @JoinColumn(name = "id_nhan_vienbhxh",referencedColumnName = "id" )
+//    private User users;
 }

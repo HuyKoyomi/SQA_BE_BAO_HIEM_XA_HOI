@@ -41,7 +41,7 @@ public class InsurancePremiumsController {
     }
 
     @GetMapping("/getInsurancePremiumsByClientId/{clientId}")
-    public List<InsurancePremiums> getInsurancePremiumsByClientId(@PathVariable int clientId) {
+    public List<Client> getInsurancePremiumsByClientId(@PathVariable int clientId) {
         return service.getInsurancePremiumsByClientId(clientId);
     }
 }

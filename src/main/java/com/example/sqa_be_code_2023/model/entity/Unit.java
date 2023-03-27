@@ -15,7 +15,7 @@ public class Unit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private int id;
+    private Integer id;
 
     @ApiModelProperty("Tên Đơn vị")
     @Column(name = "tenDV", nullable = false)

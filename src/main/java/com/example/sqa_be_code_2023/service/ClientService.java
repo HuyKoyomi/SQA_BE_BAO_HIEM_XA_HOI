@@ -17,6 +17,10 @@ public class ClientService {
         return responsitory.save(client);
     }
 
+    public List<Client> addClients (List<Client> clientList){
+        return responsitory.saveAll(clientList);
+    }
+
     public List<Client> getAllCLient(){
         return responsitory.findAll();
     }

@@ -1,0 +1,27 @@
+[
+  {
+    "province": "thanh_pho_ha_noi",
+    "district": "quan_ba_dinh",
+    "wards": "phuong_phuc_xa"
+  },
+  {
+    "province": "thanh_pho_ha_noi",
+    "district": "quan_ba_dinh",
+    "wards": "phuong_truc_bach"
+  },
+  {
+    "province": "thanh_pho_ha_noi",
+    "district": "quan_ba_dinh",
+    "wards": "phuong_vinh_phuc"
+  },
+  {
+    "province": "thanh_pho_ha_noi",
+    "district": "quan_ba_dinh",
+    "wards": "phuong_cong_vi"
+  },
+  {
+    "province": "thanh_pho_ha_noi",
+    "district": "quan_ba_dinh",
+    "wards": "phuong_lieu_giai"
+  }
+]

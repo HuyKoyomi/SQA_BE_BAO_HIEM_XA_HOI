@@ -1,0 +1,93 @@
+[
+  {
+    "brankName": "FPT Miền Bắc",
+    "unit": {
+      "id": 1,
+      "unitName": "Công ty TNHH Phần mềm FPT"
+    },
+    "area": {
+      "id": 1,
+      "province": "thanh_pho_ha_noi",
+      "district": "quan_ba_dinh",
+      "wards": "phuong_phuc_xa"
+    }
+  },
+  {
+    "brankName": "CMC Miền Bắc",
+    "unit": {
+      "id": 2,
+      "unitName": "Công ty công nghệ thông tin CMC"
+    },
+    "area": {
+      "id": 2,
+      "province": "thanh_pho_ha_noi",
+      "district": "quan_ba_dinh",
+      "wards": "phuong_truc_bach"
+    }
+  },
+  {
+    "brankName": "Viettel Miền Bắc",
+    "unit": {
+      "id": 3,
+      "unitName": "Công ty về công nghệ thông tin Viettel"
+    },
+    "area": {
+      "id": 3,
+      "province": "thanh_pho_ha_noi",
+      "district": "quan_ba_dinh",
+      "wards": "phuong_vinh_phuc"
+    }
+  },
+  {
+    "brankName": "VNPT Miền Bắc",
+    "unit": {
+      "id": 4,
+      "unitName": "Tập đoàn Bưu chính Viễn thông Việt Nam – VNPT"
+    },
+    "area": {
+      "id": 4,
+      "province": "thanh_pho_ha_noi",
+      "district": "quan_ba_dinh",
+      "wards": "phuong_cong_vi"
+    }
+  },
+  {
+    "brankName": "VNG Miền Bắc",
+    "unit": {
+      "id": 5,
+      "unitName": "Công Ty Cổ Phần VNG"
+    },
+    "area": {
+      "id": 5,
+      "province": "thanh_pho_ha_noi",
+      "district": "quan_ba_dinh",
+      "wards": "phuong_lieu_giai"
+    }
+  },
+  {
+    "brankName": "Bkav Miền Bắc",
+    "unit": {
+      "id": 6,
+      "unitName": "Công ty cổ phần Bkav"
+    },
+    "area": {
+      "id": 6,
+      "province": "thanh_pho_ha_noi",
+      "district": "quan_ba_dinh",
+      "wards": "phuong_phuc_xa"
+    }
+  },
+  {
+    "brankName": "Intel Miền Bắc",
+    "unit": {
+      "id": 7,
+      "unitName": "Tập đoàn Intel – Intel Corporation"
+    },
+    "area": {
+      "id": 7,
+      "province": "thanh_pho_ha_noi",
+      "district": "quan_ba_dinh",
+      "wards": "phuong_truc_bach"
+    }
+  }
+]

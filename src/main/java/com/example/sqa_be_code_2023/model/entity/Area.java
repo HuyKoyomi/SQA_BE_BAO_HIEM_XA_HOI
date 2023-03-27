@@ -1,6 +1,7 @@
 package com.example.sqa_be_code_2023.model.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -33,5 +34,7 @@ public class Area {
     private String wards;
 
     @OneToOne(mappedBy = "area")
+    @JsonIgnore
     private Brank brank;
+
 }

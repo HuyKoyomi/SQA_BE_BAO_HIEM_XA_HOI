@@ -44,7 +44,7 @@ public class InsurancePremiumsService {
         return "Lỗi không tìm thấy đối tượng";
     }
 
-    public List<InsurancePremiums> getInsurancePremiumsByClientId(int id) {
+    public List<Client> getInsurancePremiumsByClientId(int id) {
         return responsitory.getInsurancePremiumsByClientId(id);
     }
 }

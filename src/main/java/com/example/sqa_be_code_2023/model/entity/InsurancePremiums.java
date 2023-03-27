@@ -17,7 +17,7 @@ public class InsurancePremiums {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private int id;
+    private Integer id;
 
     @ApiModelProperty("bắt đầu")
     @Column(name = "batdau", nullable = false)
@@ -29,15 +29,15 @@ public class InsurancePremiums {
 
     @ApiModelProperty("Lương")
     @Column(name = "luong", nullable = false)
-    private int salary;
+    private Long salary;
 
     @ApiModelProperty("Chức vụ")
     @Column(name = "chucvu", nullable = false)
     private String position;
 
     @ApiModelProperty("Chi phí")
-    @Column(name = "chiphi", nullable = false)
-    private String expense;
+    @Column(name = "chiphi")
+    private int expense;
 
     @ManyToOne
     @JoinColumn(name = "khach_hangid", referencedColumnName = "id")
