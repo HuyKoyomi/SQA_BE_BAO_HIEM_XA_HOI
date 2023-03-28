@@ -1,0 +1,68 @@
+[
+    {
+        "insuranceName": "Bảo Hiểm Xã Hội Bắt Buộc - Việt Nam",
+        "usingTime": "2015-01-01",
+        "quyhttt": 22,
+        "quyodts": 3,
+        "quytnldbnn": 0.5,
+        "quybhtn": 2,
+        "quybhyt": 4.5,
+        "total": 32,
+        "user": {
+            "id": 1,
+            "username": "huylm6",
+            "password": "huylm6",
+            "position": "Nhân Viên BHXH",
+            "fullName": "Lý Mạnh Huy",
+            "address": "164 P. Lê Lợi, Hà Cầu, Hà Đông, Hà Nội",
+            "phoneNumber": "0963681775",
+            "email": "huylm6@gmail.com",
+            "dob": "2001-04-07",
+            "unit": "bhxh"
+        }
+    },
+    {
+        "insuranceName": "Bảo Hiểm Xã Hội Bắt Buộc - Nước Ngoài",
+        "usingTime": "2015-01-01",
+        "quyhttt": 22,
+        "quyodts": 3,
+        "quytnldbnn": 0.5,
+        "quybhtn": 0,
+        "quybhyt": 4.5,
+        "total": 30,
+        "user": {
+            "id": 2,
+            "username": "vietnb7",
+            "password": "vietnb7",
+            "position": "Giám Đốc BHXH",
+            "fullName": "Nguyễn Bá Việt",
+            "address": "Ng. 11 P. Nguyễn Quý Đức, Thanh Xuân Bắc, Thanh Xuân, Hà Nội",
+            "phoneNumber": "0963775146",
+            "email": "vietnb7@gmail.com",
+            "dob": "1996-01-01",
+            "unit": "bhxh"
+        }
+    },
+    {
+        "insuranceName": "Bảo Hiểm Xã Hội Tự Nguyện",
+        "usingTime": "2015-01-01",
+        "quyhttt": 0,
+        "quyodts": 0,
+        "quytnldbnn": 0,
+        "quybhtn": 0,
+        "quybhyt": 0,
+        "total": 22,
+        "user": {
+            "id": 3,
+            "username": "anhnht8",
+            "password": "anhnht8",
+            "position": "Nhân Viên BHXH",
+            "fullName": "Nguyễn Hoàng Tuấn Anh",
+            "address": "15 P. Cầu Đơ, Hà Cầu, Hà Đông, Hà Nội",
+            "phoneNumber": "0963712346",
+            "email": "anhnht8@gmail.com",
+            "dob": "2001-06-01",
+            "unit": "bhxh"
+        }
+    }
+]
