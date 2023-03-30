@@ -47,7 +47,7 @@ public class InsuranceType {
     @Column(name = "tong")
     private Double total;
 
-//    @ManyToOne
-//    @JoinColumn(name = "id_nhan_vienbhxh",referencedColumnName = "id" )
-//    private User users;
+    @ManyToOne
+    @JoinColumn(name = "nhan_vienbhxhid",referencedColumnName = "id" )
+    private User user;
 }

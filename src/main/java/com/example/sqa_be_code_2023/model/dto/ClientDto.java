@@ -10,11 +10,11 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ClientDto {
+
     private int id;
-    private String insuranceNumber;
-    private String citizenID;
     private String fullName;
-    private Date dob;
-    private Date timeToStart;
-    private int totalTime;
+    private Date begin;
+    private Date end;
+    private Long totalTime;
+    private int clientId;
 }

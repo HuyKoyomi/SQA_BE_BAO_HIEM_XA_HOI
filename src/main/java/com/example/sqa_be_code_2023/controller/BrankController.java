@@ -3,15 +3,12 @@ package com.example.sqa_be_code_2023.controller;
 import com.example.sqa_be_code_2023.model.entity.Brank;
 import com.example.sqa_be_code_2023.service.BrankService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-//@CrossOrigin("https://localhost:3000/")
+@CrossOrigin("*")
 public class BrankController {
     @Autowired
     private BrankService service;

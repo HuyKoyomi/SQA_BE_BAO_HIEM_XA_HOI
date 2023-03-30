@@ -25,6 +25,11 @@ public class UserService {
         return result;
     }
 
+    public List<User> addUsers(List<User> userList) {
+        return userResponsitory.saveAll(userList);
+    }
+
+
     public User addUser(User user) {
         return userResponsitory.save(user);
     }

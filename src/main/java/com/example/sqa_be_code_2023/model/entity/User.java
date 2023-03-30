@@ -50,11 +50,13 @@ public class User {
     private String unit;
 
     @OneToOne(mappedBy = "user")
+    @JsonIgnore
+    @Fetch(FetchMode.JOIN)
     private SystermInformation systermInformation;
 
-//    @OneToMany(mappedBy = "user")
-//    @JsonIgnore
-//    @Fetch(FetchMode.JOIN)
-//    private List<InsuranceType> insuranceType;
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    @Fetch(FetchMode.JOIN)
+    private List<InsuranceType> insuranceType;
 
 }

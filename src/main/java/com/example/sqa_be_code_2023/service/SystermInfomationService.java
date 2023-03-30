@@ -16,6 +16,10 @@ public class SystermInfomationService {
         return systermInformationResponsitory.save(systermInformation);
     }
 
+    public List<SystermInformation> addSystermInformations(List<SystermInformation> systermInformation) {
+        return systermInformationResponsitory.saveAll(systermInformation);
+    }
+
     public List<SystermInformation> getAllSystermInformation() {
         return systermInformationResponsitory.findAll();
     }

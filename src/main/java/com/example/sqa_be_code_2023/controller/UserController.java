@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin("https://localhost:3000/")
+@CrossOrigin("*")
 public class UserController {
     @Autowired
     private UserService userService;
@@ -17,6 +17,11 @@ public class UserController {
     @GetMapping("/user")
     public List<UserDto> getAllUser() {
         return userService.getAllUser();
+    }
+
+    @PostMapping("/users")
+    public List<User> addUsers(@RequestBody List<User> userList) {
+        return userService.addUsers(userList);
     }
 
     @PostMapping("/user")

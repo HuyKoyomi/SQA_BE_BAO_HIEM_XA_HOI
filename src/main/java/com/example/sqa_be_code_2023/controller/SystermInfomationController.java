@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin("https://localhost:3000/")
+@CrossOrigin("*")
 public class SystermInfomationController {
     @Autowired
     private SystermInfomationService systermInfomationService;
@@ -16,6 +16,11 @@ public class SystermInfomationController {
     @PostMapping("/systermInfomation")
     public SystermInformation createOne(@RequestBody SystermInformation systermInformation) {
         return systermInfomationService.addSystermInformation(systermInformation);
+    }
+
+    @PostMapping("/systermInfomations")
+    public List<SystermInformation> createMany(@RequestBody List<SystermInformation> systermInformation) {
+        return systermInfomationService.addSystermInformations(systermInformation);
     }
 
     @GetMapping("/systermInfomation")

@@ -1,5 +1,6 @@
 package com.example.sqa_be_code_2023.service;
 
+import com.example.sqa_be_code_2023.model.dto.ClientDto;
 import com.example.sqa_be_code_2023.model.entity.Client;
 import com.example.sqa_be_code_2023.model.entity.InsurancePremiums;
 import com.example.sqa_be_code_2023.respository.InsurancePremiumsResponsitory;
@@ -16,10 +17,14 @@ public class InsurancePremiumsService {
     public InsurancePremiums addInsurancePremiums(InsurancePremiums insurancePremiums) {
         return responsitory.save(insurancePremiums);
     }
+    public List<InsurancePremiums> addInsurancePremiumsMany(List<InsurancePremiums> insurancePremiums) {
+        return responsitory.saveAll(insurancePremiums);
+    }
 
     public List<InsurancePremiums> getAllInsurancePremiums() {
         return responsitory.findAll();
     }
+
 
     public InsurancePremiums getByIdClient(int id) {
         return responsitory.findById(id).orElse(null);
@@ -44,7 +49,11 @@ public class InsurancePremiumsService {
         return "Lỗi không tìm thấy đối tượng";
     }
 
-    public List<Client> getInsurancePremiumsByClientId(int id) {
+    public List<InsurancePremiums> getInsurancePremiumsByClientId(Integer id) {
         return responsitory.getInsurancePremiumsByClientId(id);
+    }
+
+    public List<ClientDto> getAllInsurancePremiumsByUnit(String province,String district,String wards, Integer unitId ) {
+        return responsitory.getAllInsurancePremiumsByUnit(province, district, wards, unitId);
     }
 }

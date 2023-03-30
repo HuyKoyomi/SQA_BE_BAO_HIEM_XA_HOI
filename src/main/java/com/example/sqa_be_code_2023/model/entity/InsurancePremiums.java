@@ -1,5 +1,6 @@
 package com.example.sqa_be_code_2023.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
 import jakarta.persistence.*;
 import lombok.*;
@@ -41,23 +42,27 @@ public class InsurancePremiums {
 
     @ManyToOne
     @JoinColumn(name = "khach_hangid", referencedColumnName = "id")
-//    @EqualsAndHashCode.Exclude
-//    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+//    @JsonIgnore
     private Client client;
 
     @ManyToOne
     @JoinColumn(name = "don_viid")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
+//    @JsonIgnore
     private Unit unit;
 
     @OneToOne
     @JoinColumn(name = "khu_vucid", referencedColumnName = "id")
+//    @JsonIgnore
     private Area area;
 
     @ManyToOne
     @JoinColumn(name = "loaibhxhid")
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
+//    @JsonIgnore
     private InsuranceType insuranceType;
 }

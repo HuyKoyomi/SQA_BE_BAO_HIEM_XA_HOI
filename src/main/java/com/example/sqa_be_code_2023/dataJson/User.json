@@ -1,0 +1,46 @@
+[
+  {
+    "username": "huylm6",
+    "password": "huylm6",
+    "position": "Nhân Viên BHXH",
+    "fullName": "Lý Mạnh Huy",
+    "address": "164 P. Lê Lợi, Hà Cầu, Hà Đông, Hà Nội",
+    "phoneNumber": "0963681775",
+    "email": "huylm6@gmail.com",
+    "dob": "2001-04-07",
+    "unit": "bhxh"
+  },
+  {
+  "username": "vietnb7",
+  "password": "vietnb7",
+  "position": "Giám Đốc BHXH",
+  "fullName": "Nguyễn Bá Việt",
+  "address": "Ng. 11 P. Nguyễn Quý Đức, Thanh Xuân Bắc, Thanh Xuân, Hà Nội",
+  "phoneNumber": "0963775146",
+  "email": "vietnb7@gmail.com",
+  "dob": "1996-01-01",
+  "unit": "bhxh"
+  },
+  {
+    "username": "anhnht8",
+    "password": "anhnht8",
+    "position": "Nhân Viên BHXH",
+    "fullName": "Nguyễn Hoàng Tuấn Anh",
+    "address": "15 P. Cầu Đơ, Hà Cầu, Hà Đông, Hà Nội",
+    "phoneNumber": "0963712346",
+    "email": "anhnht8@gmail.com",
+    "dob": "2001-06-01",
+    "unit": "bhxh"
+  },
+  {
+    "username": "hungtm40",
+    "password": "hungtm40",
+    "position": "Giám Đốc BHXH",
+    "fullName": "Trương Minh Hùng",
+    "address": "Ngõ 4 P. Bùi Huy Bích, trung tâm, Hoàng Mai, Hà Nội",
+    "phoneNumber": "0363712346",
+    "email": "hungtm40@gmail.com",
+    "dob": "1999-01-01",
+    "unit": "bhxh"
+  }
+]

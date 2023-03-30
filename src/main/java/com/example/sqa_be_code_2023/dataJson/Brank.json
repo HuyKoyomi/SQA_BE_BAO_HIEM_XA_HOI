@@ -63,31 +63,5 @@
       "district": "quan_ba_dinh",
       "wards": "phuong_lieu_giai"
     }
-  },
-  {
-    "brankName": "Bkav Miền Bắc",
-    "unit": {
-      "id": 6,
-      "unitName": "Công ty cổ phần Bkav"
-    },
-    "area": {
-      "id": 6,
-      "province": "thanh_pho_ha_noi",
-      "district": "quan_ba_dinh",
-      "wards": "phuong_phuc_xa"
-    }
-  },
-  {
-    "brankName": "Intel Miền Bắc",
-    "unit": {
-      "id": 7,
-      "unitName": "Tập đoàn Intel – Intel Corporation"
-    },
-    "area": {
-      "id": 7,
-      "province": "thanh_pho_ha_noi",
-      "district": "quan_ba_dinh",
-      "wards": "phuong_truc_bach"
-    }
   }
 ]
