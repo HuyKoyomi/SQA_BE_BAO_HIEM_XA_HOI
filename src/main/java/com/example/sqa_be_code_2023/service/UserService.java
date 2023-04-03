@@ -1,7 +1,7 @@
 package com.example.sqa_be_code_2023.service;
 
-import com.example.sqa_be_code_2023.model.entity.User;
 import com.example.sqa_be_code_2023.model.dto.UserDto;
+import com.example.sqa_be_code_2023.model.entity.User;
 import com.example.sqa_be_code_2023.model.mapper.UserMapper;
 import com.example.sqa_be_code_2023.respository.UserResponsitory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,5 +46,17 @@ public class UserService {
         } catch (Exception e) {
             return e.toString();
         }
+    }
+
+    public Boolean getUserByUsernameAndPassword(String username, String password) {
+        try {
+            User user = userResponsitory.getUserByUsernameAndPassword(username, password);
+            if (user.equals(null)) {
+                return false;
+            }
+            return true;
+        } catch (Exception err) {
+        }
+        return false;
     }
 }

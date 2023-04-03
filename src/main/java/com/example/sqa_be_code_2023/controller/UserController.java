@@ -39,6 +39,11 @@ public class UserController {
         return userService.deleteById(id);
     }
 
+    @GetMapping("/userLogin")
+    public Boolean userLogin(@RequestParam String username, @RequestParam String password){
+        return userService.getUserByUsernameAndPassword(username, password);
+    }
+
 
 
 }

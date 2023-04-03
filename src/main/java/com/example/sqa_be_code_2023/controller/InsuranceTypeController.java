@@ -24,4 +24,9 @@ public class InsuranceTypeController {
     public List<InsuranceType> getAllInsuranceType() {
         return service.getAllInsuranceType();
     }
+
+    @PutMapping("/insuranceType/{id}")
+    public Boolean updateInsuranceTypeById (@PathVariable int id, @RequestBody InsuranceType iy){
+        return service.updateInsuranceTypeById(id,iy);
+    }
 }
