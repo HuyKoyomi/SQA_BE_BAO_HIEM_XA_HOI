@@ -1,15 +1,21 @@
 package com.example.sqa_be_code_2023.service;
 
 import com.example.sqa_be_code_2023.model.dto.ClientDto;
+import com.example.sqa_be_code_2023.model.dto.ReportDto;
 import com.example.sqa_be_code_2023.model.entity.Client;
 import com.example.sqa_be_code_2023.model.entity.InsurancePremiums;
 import com.example.sqa_be_code_2023.respository.InsurancePremiumsResponsitory;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
+@Log4j2
 public class InsurancePremiumsService {
     @Autowired
     private InsurancePremiumsResponsitory responsitory;
@@ -17,6 +23,7 @@ public class InsurancePremiumsService {
     public InsurancePremiums addInsurancePremiums(InsurancePremiums insurancePremiums) {
         return responsitory.save(insurancePremiums);
     }
+
     public List<InsurancePremiums> addInsurancePremiumsMany(List<InsurancePremiums> insurancePremiums) {
         return responsitory.saveAll(insurancePremiums);
     }
@@ -53,7 +60,26 @@ public class InsurancePremiumsService {
         return responsitory.getInsurancePremiumsByClientId(id);
     }
 
-    public List<ClientDto> getAllInsurancePremiumsByUnit(String province,String district,String wards, Integer unitId ) {
+    public List<ClientDto> getAllInsurancePremiumsByUnit(String province, String district, String wards, Integer unitId) {
         return responsitory.getAllInsurancePremiumsByUnit(province, district, wards, unitId);
+    }
+
+    public List<ReportDto> getReportByUnitOrArea(String province, String district, String wards, Integer unitId, Date beginTime, Date endTime) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            beginTime = format.parse(beginTime + "");
+            endTime = format.parse(endTime + "");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        System.out.println(beginTime + "-"+ endTime);
+        List<ReportDto> reportDtoList = responsitory.getReportByUnitOrArea(province, district, wards, unitId,  beginTime, endTime);
+        for (ReportDto i : reportDtoList) {
+            Long res =   Double.valueOf(i.getSalary() * i.getTotal() / 100).longValue();
+            i.setTotalInsurance(res);
+        }
+
+        return reportDtoList;
+
     }
 }

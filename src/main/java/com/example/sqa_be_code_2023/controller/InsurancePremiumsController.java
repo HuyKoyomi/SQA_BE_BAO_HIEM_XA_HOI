@@ -1,6 +1,7 @@
 package com.example.sqa_be_code_2023.controller;
 
 import com.example.sqa_be_code_2023.model.dto.ClientDto;
+import com.example.sqa_be_code_2023.model.dto.ReportDto;
 import com.example.sqa_be_code_2023.model.entity.Client;
 import com.example.sqa_be_code_2023.model.entity.InsurancePremiums;
 import com.example.sqa_be_code_2023.service.InsurancePremiumsService;
@@ -55,5 +56,11 @@ public class InsurancePremiumsController {
     @GetMapping("/getAllInsurancePremiumsByUnit")
     public List<ClientDto> getAllInsurancePremiumsByUnit(@RequestParam(value = "province", required = false) String province, @RequestParam(value = "district", required = false) String district, @RequestParam(value = "wards", required = false) String wards, @RequestParam(value = "unitId", required = false) Integer unitId) {
         return service.getAllInsurancePremiumsByUnit(province, district, wards, unitId);
+    }
+
+    @PostMapping("/getReportByUnitOrArea")
+    public List<ReportDto> getReportByUnitOrArea(@RequestBody ReportDto reportDto) {
+        return service.getReportByUnitOrArea(reportDto.getProvince(), reportDto.getDistrict(), reportDto.getWards(),
+                reportDto.getUnitId(), reportDto.getBegin(), reportDto.getEnd());
     }
 }
