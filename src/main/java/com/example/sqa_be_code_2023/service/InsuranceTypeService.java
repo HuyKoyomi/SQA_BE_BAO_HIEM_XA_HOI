@@ -27,8 +27,8 @@ public class InsuranceTypeService {
         if (insuranceType != null) {
             iy.setUser(insuranceType.getUser());
             iy.setInsuranceName(insuranceType.getInsuranceName());
-            iy.setTotal(insuranceType.getTotal());
             responsitory.save(iy);
+            System.out.println(iy.getTotal());
             return true;
         }
         return false;
