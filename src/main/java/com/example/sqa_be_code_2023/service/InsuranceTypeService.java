@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class InsuranceTypeService {
@@ -17,6 +18,10 @@ public class InsuranceTypeService {
 
     public List<InsuranceType> addInsuranceTypes (List<InsuranceType> insuranceTypeList){
         return responsitory.saveAll(insuranceTypeList);
+    }
+    public InsuranceType getInsuranceTypesById (int id){
+         Optional<InsuranceType> op = responsitory.findById(id);
+         return op.get();
     }
     public List<InsuranceType> getAllInsuranceType (){
         return responsitory.findAll();

@@ -29,4 +29,10 @@ public class InsuranceTypeController {
     public Boolean updateInsuranceTypeById (@PathVariable int id, @RequestBody InsuranceType iy){
         return service.updateInsuranceTypeById(id,iy);
     }
+    @GetMapping("/insuranceType/{id}")
+    public InsuranceType getInsuranceTypesById (@PathVariable int id){
+        return service.getInsuranceTypesById(id);
+    }
+
+
 }

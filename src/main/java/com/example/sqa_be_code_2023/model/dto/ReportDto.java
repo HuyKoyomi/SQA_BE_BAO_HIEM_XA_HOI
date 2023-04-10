@@ -26,11 +26,15 @@ public class ReportDto {
 
     private Integer insuranceTypeId;
 
-    public ReportDto(Date begin, Date end, Long salary, Double total, Integer insuranceTypeId) {
+    public ReportDto(Date begin, Date end, Long salary, Double total, Integer insuranceTypeId, String unitName, String province, String district, String wards) {
         this.begin = begin;
         this.end = end;
         this.salary = salary;
         this.total = total;
         this.insuranceTypeId = insuranceTypeId;
+        this.unitName = unitName;
+        this.province = province;
+        this.district = district;
+        this.wards = wards;
     }
 }

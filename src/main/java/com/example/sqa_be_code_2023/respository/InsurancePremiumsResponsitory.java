@@ -29,7 +29,7 @@ public interface InsurancePremiumsResponsitory extends JpaRepository<InsurancePr
     List<ClientDto> getAllInsurancePremiumsByUnit(String province, String district, String wards, Integer unitId);
 
     //    @Query(value = "SELECT COALESCE(sum(ip.salary * it.total * PERIOD_DIFF(DATE_FORMAT(ip.end,'%Y%m'),DATE_FORMAT(ip.begin,'%Y%m') ))) " +
-    @Query(value = "SELECT new com.example.sqa_be_code_2023.model.dto.ReportDto (  ip.begin,ip.end, ip.salary,it.total, it.id ) " +
+    @Query(value = "SELECT new com.example.sqa_be_code_2023.model.dto.ReportDto (  ip.begin,ip.end, ip.salary,it.total, it.id, u.unitName,a.province, a.district, a.wards)  " +
             "FROM InsurancePremiums ip " +
             "join ip.area a " +
             "left join ip.unit u " +
